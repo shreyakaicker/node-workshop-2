@@ -1,0 +1,23 @@
+{
+  "name": "json-callbacks",
+  "version": "1.0.0",
+  "description": "json request",
+  "main": "request-as-json.js",
+  "dependencies": {
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyakaicker/node-workshop-2.git"
+  },
+  "author": "Shreya Kaicker shreyakaicker@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyakaicker/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/shreyakaicker/node-workshop-2#readme"
+}
