@@ -1,5 +1,5 @@
 var request = require('request'); 
-var url = 'http://jsonplaceholder.typicode.com/users';
+// var url = 'http://jsonplaceholder.typicode.com/users';
 
 function requestJson(url, callback) {
     request(url, function (err, response) {
@@ -16,14 +16,14 @@ function requestJson(url, callback) {
     })
 }
 
-requestJson(url, function(err, response) {
-    if (err) {
-        console.log ("error");
-    }
-    else {
-    console.log(response);
-    }
-})
+// requestJson(url, function(err, response) {
+//     if (err) {
+//         console.log ("error");
+//     }
+//     else {
+//     console.log(response);
+//     }
+// })
 
 
 module.exports = {
