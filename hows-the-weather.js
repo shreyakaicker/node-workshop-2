@@ -27,6 +27,29 @@ prompt.get('userLocation', function(err, answer) {
                 console.log('user longitude ' + userLongitude);
                 var apiURL = add + userLatitude + ',' + userLongitude;
                 console.log(apiURL);
+                
+                
+                requestJson(apiURL, function (err, data1) {
+            if (err) {
+                console.log('there was an error');
+            }
+            else {
+                  var parsedBody = data1;
+                  var userForecast = parsedBody.daily.data[0].summary;
+                  console.log("The weather for today is; " + userForecast);
+                  
+                  var userForecast2 = parsedBody.daily.data[1].summary;
+                  console.log("The weather for tomorrow is; " + userForecast2);
+                  
+                  var userForecast3 = parsedBody.daily.data[2].summary;
+                  console.log("The weather for day after tom is; " + userForecast3);
+                  
+                  var userForecast4 = parsedBody.daily.data[3].summary;
+                  console.log("The weather for 3 days later is; " + userForecast4);
+                  
+                  var userForecast5 = parsedBody.daily.data[4].summary;
+                  console.log("The weather for 4 days later is; " + userForecast5);
+            }})
             }
         });
     }
