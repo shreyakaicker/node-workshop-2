@@ -38,5 +38,10 @@ function requestJson(url, callback) {
 }
 
 requestJson(url, function(err, response) {
-    console.log(response)
+    if (err) {
+        console.log ("error");
+    }
+    else {
+    console.log(response);
+    }
 })
